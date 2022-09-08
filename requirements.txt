@@ -2,3 +2,4 @@ selenium
 pandas
 python-mecab-ko
 selenium
+typer

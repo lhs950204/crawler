@@ -6,7 +6,7 @@ sys.path.insert(0, "../")
 
 from typing import Dict, List, Tuple
 from typing import Any
-from base_crawler import BaseCrawler
+from .base_crawler import BaseCrawler
 from utils import logger_wrapper
 from selenium.webdriver.common.by import By
 

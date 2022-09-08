@@ -20,6 +20,6 @@
 3.  스크립트 실행
     #### ※ 크롤링한 결과를 mecab 라이브러리로 품사나 조사 등은 제거하고 명사면 count 를 계산해서 tsv 로 떨궈주는 스크립트입니다.(mecab 에서 명사가 아닌데 명사라고 틀린결과를 리턴해줄수는 있어용...ㅠㅠ)
     #### 1.크롤링을 진행하고 크롤링된 결과파일을 별도로 읽어서 처리
-        python calc_words.py --with-crawling
+        python calc_words.py --with-crawling --os-type mac
     #### 2.크롤링은 안하고 결과파일만 읽어서 단어 count 확인
         python calc_words.py --result-file result.tsv

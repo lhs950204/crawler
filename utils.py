@@ -1,6 +1,7 @@
 import logging
 from typing import Any, Callable, Dict, Tuple
 
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
 
 

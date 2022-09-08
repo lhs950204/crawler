@@ -1,0 +1,56 @@
+{
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.sortImports.args": [
+        "-rc",
+        "--atomic"
+    ],
+    "python.formatting.provider": "black",
+    // 아래 black path 는 whereis black 명령을 이용하여 수정하면됨
+    "python.formatting.blackPath": "/Users/lhs950204/miniconda3/envs/mecab-env/bin/black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "120",
+        "--exclude",
+        "/(\\.git|\\.hg|\\.mypy_cache|\\.nox|\\|\\|_build|buck-out|build|dist|myscript|sent2vec_wrapper)/"
+    ],
+    "python.linting.ignorePatterns": [
+        ".vscode/*.py",
+        ".vscode",
+        ".git",
+        ".pyc",
+        "**/site-packages/**/*.py",
+        "/(\\.git|\\.hg|\\.mypy_cache|\\.nox|\\|\\|_build|buck-out|build|dist|myscript|sent2vec_wrapper)/"
+    ],
+    "python.linting.pylintEnabled": false,
+    "editor.formatOnSave": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true
+    },
+    "python.analysis.completeFunctionParens": true,
+    "editor.fontSize": 12,
+    "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    /* 일부 테마에서 python 예약어(self, cls) 가 다른 파라메터랑 동일한 색상으로 나오는경우 아래 색상값을 조정하면됨 */
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "variable.language.special.self.python",
+                    "variable.parameter.function.language.special.self.python",
+                    "variable.language.special.cls.python",
+                    "variable.parameter.function.language.special.cls.python"
+                ],
+                "settings": {
+                    "foreground": "#aa01ff"
+                }
+            }
+        ]
+    },
+    "files.insertFinalNewline": true,
+    "python.analysis.typeCheckingMode": "strict"
+}
